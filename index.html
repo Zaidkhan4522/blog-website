@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Blog | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Modern<span>Blog</span></a>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                    <li><a href="#" class="nav-link" data-page="blog">Blog</a></li>
+                    <li><a href="#" class="nav-link" data-page="about">About</a></li>
+                    <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Page -->
+    <section id="home-page" class="page-content">
+        <div class="hero">
+            <div class="container">
+                <h1>Welcome to Modern Blog</h1>
+                <p>Discover insightful articles, creative ideas, and inspiring stories. Join our community of readers and writers exploring topics from technology to lifestyle.</p>
+                <a href="#" class="btn" data-page="blog">Explore Articles</a>
+            </div>
+        </div>
+        
+        <div class="container main-content">
+            <h2 class="text-center mb-30">Featured Articles</h2>
+            <div class="blog-posts">
+                <!-- Featured posts will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Page -->
+    <section id="blog-page" class="page-content hidden">
+        <div class="container main-content">
+            <h1 class="page-title">Blog Articles</h1>
+            <div class="blog-posts">
+                <!-- All blog posts will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about-page" class="page-content hidden">
+        <div class="container main-content">
+            <h1 class="page-title">About Us</h1>
+            
+            <div class="about-section">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Our Team">
+                </div>
+                <div class="about-content">
+                    <h2>Our Story</h2>
+                    <p>Welcome to Modern Blog, a platform dedicated to sharing knowledge, ideas, and stories that matter. Founded in 2023, our mission is to create a space where curious minds can explore a wide range of topics from technology and science to arts and culture.</p>
+                    <p>Our team of writers and editors work tirelessly to bring you well-researched, engaging content that informs, inspires, and entertains. We believe in the power of words to change perspectives and create connections.</p>
+                    <p>At Modern Blog, we're committed to fostering a community of lifelong learners. Whether you're here to read, share, or discuss, we're glad to have you as part of our journey.</p>
+                    <a href="#" class="btn" data-page="contact">Get In Touch</a>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <h2>Our Values</h2>
+                <div class="blog-posts">
+                    <div class="post-card">
+                        <div class="post-content">
+                            <i class="fas fa-lightbulb" style="font-size: 2rem; color: var(--accent-color); margin-bottom: 15px;"></i>
+                            <h3 class="post-title">Innovation</h3>
+                            <p class="post-excerpt">We embrace new ideas and approaches to create content that stands out and makes a difference.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="post-card">
+                        <div class="post-content">
+                            <i class="fas fa-handshake" style="font-size: 2rem; color: var(--accent-color); margin-bottom: 15px;"></i>
+                            <h3 class="post-title">Community</h3>
+                            <p class="post-excerpt">We believe in building connections and fostering meaningful conversations around important topics.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="post-card">
+                        <div class="post-content">
+                            <i class="fas fa-award" style="font-size: 2rem; color: var(--accent-color); margin-bottom: 15px;"></i>
+                            <h3 class="post-title">Quality</h3>
+                            <p class="post-excerpt">We're committed to delivering well-researched, thoughtfully crafted content that our readers can trust.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact-page" class="page-content hidden">
+        <div class="container main-content">
+            <h1 class="page-title">Contact Us</h1>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, feel free to reach out.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Our Location</h4>
+                            <p>123 Blog Street, Digital City, DC 10001</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone Number</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Address</h4>
+                            <p>info@modernblog.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Message Subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" placeholder="Your Message..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">Modern<span>Blog</span></a>
+                    <p>A platform dedicated to sharing knowledge, ideas, and stories that matter. Join our community of readers and writers.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#" data-page="home">Home</a></li>
+                        <li><a href="#" data-page="blog">Blog</a></li>
+                        <li><a href="#" data-page="about">About</a></li>
+                        <li><a href="#" data-page="contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and articles.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Modern Blog. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Sample blog data
+        const blogPosts = [
+            {
+                id: 1,
+                title: "The Future of Web Development",
+                excerpt: "Exploring the latest trends and technologies shaping the future of web development.",
+                category: "Technology",
+                date: "June 15, 2023",
+                img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80",
+                featured: true
+            },
+            {
+                id: 2,
+                title: "Mindfulness in the Digital Age",
+                excerpt: "How to stay present and mindful in an increasingly connected world.",
+                category: "Lifestyle",
+                date: "June 10, 2023",
+                img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80",
+                featured: true
+            },
+            {
+                id: 3,
+                title: "Sustainable Living Tips",
+                excerpt: "Practical ways to reduce your environmental footprint and live more sustainably.",
+                category: "Environment",
+                date: "June 5, 2023",
+                img: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80",
+                featured: true
+            },
+            {
+                id: 4,
+                title: "Artificial Intelligence Ethics",
+                excerpt: "Examining the ethical considerations in the development and deployment of AI.",
+                category: "Technology",
+                date: "May 28, 2023",
+                img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80",
+                featured: false
+            },
+            {
+                id: 5,
+                title: "The Art of Storytelling",
+                excerpt: "How compelling narratives can enhance communication in business and life.",
+                category: "Writing",
+                date: "May 20, 2023",
+                img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80",
+                featured: false
+            },
+            {
+                id: 6,
+                title: "Remote Work Productivity",
+                excerpt: "Strategies for maintaining productivity and work-life balance while working remotely.",
+                category: "Business",
+                date: "May 12, 2023",
+                img: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=700&q=80",
+                featured: false
+            }
+        ];
+
+        // DOM Elements
+        const navLinks = document.querySelectorAll('.nav-link');
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('nav');
+        const pages = document.querySelectorAll('.page-content');
+        const blogPostsContainer = document.querySelectorAll('.blog-posts');
+        const contactForm = document.getElementById('contactForm');
+        const newsletterForm = document.querySelector('.newsletter-form');
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load featured posts on home page
+            loadFeaturedPosts();
+            
+            // Load all posts on blog page
+            loadAllPosts();
+            
+            // Set active nav link
+            setActiveNavLink('home');
+            
+            // Add event listeners
+            addEventListeners();
+        });
+
+        // Load featured posts (3 posts with featured: true)
+        function loadFeaturedPosts() {
+            const featuredPosts = blogPosts.filter(post => post.featured);
+            const homePostsContainer = blogPostsContainer[0]; // First blog-posts container on home page
+            
+            homePostsContainer.innerHTML = '';
+            
+            featuredPosts.forEach(post => {
+                homePostsContainer.innerHTML += createPostHTML(post);
+            });
+        }
+
+        // Load all posts
+        function loadAllPosts() {
+            const blogPagePostsContainer = blogPostsContainer[1]; // Second blog-posts container on blog page
+            
+            blogPagePostsContainer.innerHTML = '';
+            
+            blogPosts.forEach(post => {
+                blogPagePostsContainer.innerHTML += createPostHTML(post);
+            });
+        }
+
+        // Create HTML for a blog post
+        function createPostHTML(post) {
+            return `
+                <article class="post-card">
+                    <img src="${post.img}" alt="${post.title}" class="post-img">
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-category">${post.category}</span>
+                            <span class="post-date">${post.date}</span>
+                        </div>
+                        <h3 class="post-title">${post.title}</h3>
+                        <p class="post-excerpt">${post.excerpt}</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            `;
+        }
+
+        // Set active navigation link
+        function setActiveNavLink(page) {
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-page') === page) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // Switch between pages
+        function switchPage(page) {
+            // Hide all pages
+            pages.forEach(pageElement => {
+                pageElement.classList.add('hidden');
+            });
+            
+            // Show selected page
+            document.getElementById(`${page}-page`).classList.remove('hidden');
+            
+            // Update active nav link
+            setActiveNavLink(page);
+            
+            // Close mobile menu if open
+            navMenu.classList.remove('active');
+        }
+
+        // Add event listeners
+        function addEventListeners() {
+            // Navigation links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const page = this.getAttribute('data-page');
+                    switchPage(page);
+                });
+            });
+            
+            // Mobile menu toggle
+            mobileMenuBtn.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+            
+            // Footer links
+            document.querySelectorAll('.footer-links a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    if (this.getAttribute('data-page')) {
+                        e.preventDefault();
+                        const page = this.getAttribute('data-page');
+                        switchPage(page);
+                    }
+                });
+            });
+            
+            // Contact form submission
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form values
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const subject = document.getElementById('subject').value;
+                    const message = document.getElementById('message').value;
+                    
+                    // In a real application, you would send this data to a server
+                    console.log('Contact form submitted:', { name, email, subject, message });
+                    
+                    // Show success message
+                    alert('Thank you for your message! We will get back to you soon.');
+                    
+                    // Reset form
+                    contactForm.reset();
+                });
+            }
+            
+            // Newsletter form submission
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const emailInput = this.querySelector('input[type="email"]');
+                    const email = emailInput.value;
+                    
+                    // In a real application, you would send this data to a server
+                    console.log('Newsletter subscription:', email);
+                    
+                    // Show success message
+                    alert('Thank you for subscribing to our newsletter!');
+                    
+                    // Reset form
+                    emailInput.value = '';
+                });
+            }
+            
+            // Buttons with data-page attribute
+            document.querySelectorAll('.btn[data-page]').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const page = this.getAttribute('data-page');
+                    switchPage(page);
+                });
+            });
+        }
+    </script>
+</body>
+</html>
